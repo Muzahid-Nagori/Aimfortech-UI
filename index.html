@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>AccuWeather</title>
+</head>
+<body>
+    <div class="main-container">
+    <div class="main-nav">
+        <div class="nav d-flex align-items-center justify-content-between">
+            <div class="nav-left d-flex align-items-center justify-content-start gap-2 fs-6">
+                <img src="./download-removebg-preview.png" alt="">
+                <h3>AccuWeather</h3>
+            </div>
+            <div class="nav-right">
+                <i class="bi bi-list-nested"></i>
+            </div>
+        </div>
+
+        <div class="in-card-main">
+        <div class="in-card d-flex align-items-start justify-content-start gap-3 flex-column">
+            <div class="input w-100 px-2 bg-light d-flex align-items-center justify-content-between">
+                <i class="bi bi-search"></i>
+                <input type="text" placeholder="Search your Address, City or Zip Code" class="border-0 bg-transparent">
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Location
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+            </div>
+
+            <p>RECENT LOCATIONS</p>
+
+            <div class="father-in-kkr d-flex gap-3">
+                <div class="kkr d-flex align-items-start justify-content-start flex-column">
+                    <h4>Kolkata</h4>
+                    <small>India</small>
+                    <span><img src="https://www.accuweather.com/images/weathericons/04.svg" alt=""> 30° C</span>
+                    <small>RealFeel® 37°</small>
+                </div>
+
+                <div class="kkr d-flex align-items-start justify-content-start flex-column">
+                    <h4>Kolkata</h4>
+                    <small>India</small>
+                    <span><img src="https://www.accuweather.com/images/weathericons/04.svg" alt=""> 30° C</span>
+                    <small>RealFeel® 37°</small>
+                </div>
+            </div>
+           
+        </div>
+        <!-- in-card -->
+    </div>
+    </div>
+
+    
+    <div class="container-main d-flex align-items-center justify-content-center flex-column">
+    <div class="c-container w-100 d-flex align-items-start justify-content-between gap-3">
+       
+        <div class="c-map">          
+      <div class="sec-b mb-3">
+        <div class="s-b-left w-100">
+            <div class="is bg-light p-2 d-flex align-items-center justify-content-between">
+                <p class="m-0">INDIA WEATHER RADAR</p>
+                <a href="#">See more <i class="bi bi-arrow-right"></i></a>
+            </div>
+            <img src="https://api.accuweather.com/maps/v1/radar/static/globalSIR/tile?apikey=de13920f574d420984d3080b1fa6132b&zoom=3&lon=77.000&lat=20.000&imgwidth=768&imgheight=432&language=en-us&base_data=radar" alt="">
+        </div>
+        <!-- s-b-left end -->
+      </div>
+      <!-- section-b end -->
+
+      <div class="sec-c mb-3">
+        <div class="nc py-3 bg-light">
+        <div class="is bg-light p-2 d-flex align-items-center justify-content-between">
+          <h4 class="m-0">Weather News</h4>
+          <a href="#">See more <i class="bi bi-arrow-right"></i></a>
+      </div>
+      <!-- is end -->
+
+      <div class="card-group mt-3">
+        <div class="card ms-2 me-3 rounded">
+          <img src="https://img.connatix.com/eb68b291-3a6e-435c-baa8-e75931b9ff6b/1_th.jpg?w=304&h=171&crop=1" class="card-img-top" alt="...">
+          <div class="card-body">           
+            <p class="card-text">Storms sweep through the central US for yet another day</p>
+          <small class="text-muted">2 days ago</small>
+          </div>
+            
+        </div>
+        <div class="card me-3 rounded">
+          <img src="https://cms.accuweather.com/wp-content/uploads/2024/05/page-1_4f0770.jpg?w=304&h=171&crop=1" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Extreme heat, humidity to swelter southern US through Memori...</p>
+<small class="text-muted">1 hour ago</small>
+          </div>
+        </div>
+        <div class="card me-2 rounded">
+          <img src="https://cms.accuweather.com/wp-content/uploads/2024/05/436422882_863037885849157_8787058806950884826_n.jpg?w=304&h=171&crop=1" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">A foot of pre-Memorial Day snow falls in the Rockies</p>
+            <small class="text-muted">2 days ago</small>
+          </div>            
+        </div>
+      </div>
+      <!-- card-group end -->
+
+    </div>
+    <!-- nc end -->
+
+    <div class="nc py-3 bg-light">
+      <div class="is bg-light p-2 d-flex align-items-center justify-content-between">
+        <h4 class="m-0">Trending Today</h4>
+        <a href="#">See more <i class="bi bi-arrow-right"></i></a>
+    </div>
+    <!-- is end -->
+
+    <div class="card-group mt-3">
+      <div class="card ms-2 me-3 rounded">
+        <img src="https://cms.accuweather.com/wp-content/uploads/2024/06/cnn-L19jb21wb25lbnRzL2ltYWdlL2luc3RhbmNlcy9jbHd1Nnd1NXIwMDAyM2I2ajFteWE3bnpk-L19jb21wb25lbnRzL2FydGljbGUvaW5zdGFuY2VzL2Nsd3U2d2hjeDAwMG56N3FkY3RmeThjcm8.jpg?w=304&h=171&crop=1" class="card-img-top" alt="...">
+        <div class="card-body">           
+          <p class="card-text">It’s hurricane season. Good luck getting homeowners’ insuran...</p>
+        <small class="text-muted">20 hours ago</small>
+        </div>
+          
+      </div>
+      <div class="card me-3 rounded">
+        <img src="https://cms.accuweather.com/wp-content/uploads/2024/06/cnn-L19jb21wb25lbnRzL2ltYWdlL2luc3RhbmNlcy9jbHd2MDFneDAwMDFrMmU2YXA4M2RibnRk-L19jb21wb25lbnRzL2FydGljbGUvaW5zdGFuY2VzL2Nsd3V6d21icTAwMWphMnFqYmVwaTc4NTA.jpg?w=304&h=171&crop=1" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Bald eagles ‘Nick’ and ‘Nora’ searching for eaglets after Te...</p>
+<small class="text-muted">20 hour ago</small>
+        </div>
+      </div>
+      <div class="card me-2 rounded">
+        <img src="https://cms.accuweather.com/wp-content/uploads/2024/05/twitter-denverhail1S.jpeg?w=304&h=171&crop=1" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Monster midnight hailstorm buries northeast Denver</p>
+          <small class="text-muted">1 days ago</small>
+        </div>            
+      </div>
+    </div>
+    <!-- card-group end -->
+
+  </div>
+  <!-- nc-2 end -->
+</div>
+      <!-- div end -->
+
+      <div class="section-c mb-3">
+        <div class="nc py-3 bg-light">
+        <div class="is bg-light p-2 d-flex align-items-center justify-content-between">
+          <h4 class="m-0">Space and Astronomy</h4>
+          <a href="#">See more <i class="bi bi-arrow-right"></i></a>
+      </div>
+      <!-- is end -->
+
+      <div class="card-group mt-3">
+        <div class="card ms-2 me-3 rounded">
+          <img src="https://cms.accuweather.com/wp-content/uploads/2024/05/AP221662297843791.jpg?w=304&h=171&crop=1" class="card-img-top" alt="...">
+          <div class="card-body">           
+            <p class="card-text">Earliest solstice in 228 years to precede planetary alignmen...</p>
+          <small class="text-muted">1 days ago</small>
+          </div>
+            
+        </div>
+        <div class="card me-3 rounded">
+          <img src="https://cms.accuweather.com/wp-content/uploads/2024/05/cnn-L19jb21wb25lbnRzL2ltYWdlL2luc3RhbmNlcy9jbHV3ZmI1amgwMDJhM2I2aXlxeDB6Njh0-L19jb21wb25lbnRzL2FydGljbGUvaW5zdGFuY2VzL2NsdXdmOGFrZjAwNWoyNm5yZno5NDQ4ZXE.jpg?w=304&h=171&crop=1" alt="...">
+          <div class="card-body">
+            <p class="card-text">China and Russia in space race to disrupt America's edge</p>
+<small class="text-muted">4 days ago</small>
+          </div>
+        </div>
+        <div class="card me-2 rounded">
+          <img src="https://cms.accuweather.com/wp-content/uploads/2024/05/cnn-L19jb21wb25lbnRzL2ltYWdlL2luc3RhbmNlcy9jbHdrdThobG0wMDBpMzU2aDNvMHQ1ZTlu-L19jb21wb25lbnRzL2FydGljbGUvaW5zdGFuY2VzL2Nsd2t1NzdqOTAwMG5oZ293Z2xvNWc0bnI.jpg?w=304&h=171&crop=1" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Scientists have discovered a theoretically habitable, Earth-...</p>
+            <small class="text-muted">5 days ago</small>
+          </div>            
+        </div>
+      </div>
+      <!-- card-group end -->
+
+    </div>
+    <!-- nc end -->
+
+    <div class="nc py-3 bg-light">
+
+      <div class="is bg-light p-2 d-flex align-items-center justify-content-between">
+        <h4 class="m-0">Recreationy</h4>
+        <a href="#">See more <i class="bi bi-arrow-right"></i></a>
+    </div>
+    <!-- is end -->
+
+    <div class="card-group mt-3">
+      <div class="card ms-2 me-3 rounded">
+        <img src="https://cms.accuweather.com/wp-content/uploads/2024/05/cnn-L19jb21wb25lbnRzL2ltYWdlL2luc3RhbmNlcy9jbHdocG4yNG4wMDBpcHVucGh1MWc0NWE0-L19jb21wb25lbnRzL2FydGljbGUvaW5zdGFuY2VzL2Nsd2hwbjI0bzAwMG5wdW5wMHdlYjdsZDQ.jpg?w=304&h=171&crop=1" class="card-img-top" alt="...">
+        <div class="card-body">           
+          <p class="card-text">Endless cruise set to tour the world and it’ll always be sum...</p>
+        <small class="text-muted">3 days ago</small>
+        </div>
+          
+      </div>
+      <div class="card me-3 rounded">
+        <img src="https://cms.accuweather.com/wp-content/uploads/2024/05/cnn-L19jb21wb25lbnRzL2ltYWdlL2luc3RhbmNlcy9jbHdmdzIwd2kwMDBpYzFwODl6cm8xaDlt-L19jb21wb25lbnRzL2FydGljbGUvaW5zdGFuY2VzL2Nsd2Z3MjB3aTAwMG5jMXA4MDRkeWNpZmk.jpg?w=304&h=171&crop=1" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">What it’s really like to live in Antarctica</p>
+<small class="text-muted">3 days ago</small>
+        </div>
+      </div>
+      <div class="card me-2 rounded">
+        <img src="https://cms.accuweather.com/wp-content/uploads/2024/05/cnn-L19jb21wb25lbnRzL2ltYWdlL2luc3RhbmNlcy9jbHdpcGVlM3AwMDBpcGNucGJjODY4cnky-L19jb21wb25lbnRzL2FydGljbGUvaW5zdGFuY2VzL2Nsd2lwZWUzcDAwMG5wY25wYTMxZmFicWk.jpg?w=304&h=171&crop=1" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">The world’s best countries for tourism</p>
+          <small class="text-muted">4 days ago</small>
+        </div>            
+      </div>
+    </div>
+    <!-- card-group end -->
+
+  </div>
+  <!-- nc-2 end -->
+</div>
+<!-- div end -->
+
+<div class="section-c mb-3">
+  <div class="nc py-3 bg-light">
+
+  <div class="is bg-light p-2 d-flex align-items-center justify-content-between">
+    <h4 class="m-0">Our Changing World</h4>
+    <a href="#">See more <i class="bi bi-arrow-right"></i></a>
+</div>
+<!-- is end -->
+
+<div class="card-group mt-3">
+  <div class="card ms-2 me-3 rounded">
+    <img src="https://cms.accuweather.com/wp-content/uploads/2024/05/cnn-L19jb21wb25lbnRzL2ltYWdlL2luc3RhbmNlcy9jbHdhcW5kdGUwMDBqM2I2anZwYWxzd2x4-L19jb21wb25lbnRzL2FydGljbGUvaW5zdGFuY2VzL2Nsd2FxYmVvczAwMG4xb3A1YjdmaWdmZnM.jpg?w=304&h=171&crop=1" class="card-img-top" alt="...">
+    <div class="card-body">           
+      <p class="card-text">How a seed bank in the Mojave Desert is preserving an ecosys...</p>
+    <small class="text-muted">3 days ago</small>
+    </div>
+      
+  </div>
+  <div class="card me-3 rounded">
+    <img src="https://cms.accuweather.com/wp-content/uploads/2024/05/cnn-L19jb21wb25lbnRzL2ltYWdlL2luc3RhbmNlcy9jbHdmMzJydzEwMDRyeTdwMjEzZmM3aDV3-L19jb21wb25lbnRzL2FydGljbGUvaW5zdGFuY2VzL2Nsd2YzMnJ3MTAwNHd5N3AyYXJpbWJ1em0-1.jpg?w=304&h=171&crop=1" class="card-img-top" alt="...">
+    <div class="card-body">
+      <p class="card-text">Ocean water is rushing under ‘Doomsday Glacier,’ impacting s...</p>
+<small class="text-muted">4 days ago</small>
+    </div>
+  </div>
+  <div class="card me-2 rounded">
+    <img src="https://cms.accuweather.com/wp-content/uploads/2024/05/AP19331718211388.jpg?w=304&h=171&crop=1" class="card-img-top" alt="...">
+    <div class="card-body">
+      <p class="card-text">Venezuela becomes first country to lose all of its glaciers</p>
+      <small class="text-muted">2 weeks ago</small>
+    </div>            
+  </div>
+</div>
+<!-- card-group end -->
+
+</div>
+<!-- nc end -->
+</div>
+<!-- div end -->
+
+<div class="adg pb-1 border-bottom">
+<small class="text-muted">AROUND THE GLOBE</small>
+</div>
+<!-- adg end -->
+
+<div class="ti d-flex align-items-center justify-content-between fw-bold py-1 border-bottom">
+  <h6>HURRICANE TRACKER</h6>
+  <i class="bi bi-arrow-right"></i>
+</div>
+<!-- ti-1 end -->
+
+<div class="ti d-flex align-items-center justify-content-between fw-bold py-1 border-bottom">
+  <h6>SEVERE WEATHER</h6>
+  <i class="bi bi-arrow-right"></i>
+</div>
+<!-- ti-2 end -->
+
+<div class="ti d-flex align-items-center justify-content-between fw-bold py-1 border-bottom">
+  <h6>RADAR & MAPS</h6>
+  <i class="bi bi-arrow-right"></i>
+</div>
+<!-- ti-3 end -->
+
+<div class="ti d-flex align-items-center justify-content-between fw-bold py-1 border-bottom">
+  <h6>NEWS</h6>
+  <i class="bi bi-arrow-right"></i>
+</div>
+<!-- ti-4 end -->
+
+<div class="ti d-flex align-items-center justify-content-between fw-bold py-1 border-bottom">
+  <h6>VIDEO</h6>
+  <i class="bi bi-arrow-right"></i>
+</div>
+<!-- ti-5 end -->
+
+      </div>
+      <!-- c-left end -->
+
+      <div class="c-right">
+
+        <div class="ts mt-3 bg-light border-bottom p-3">
+          <h4>Top Stories</h4>
+        </div>
+        <!-- ts  end -->
+       
+        <div class="crd p-3 d-flex align-items-start justify-content-between gap-3 bg-light border-bottom">
+        <div class="crd-body">
+          <p class="text-muted m-0"><small>SEVERE WEATHER</small></p>
+          <p class="m-0 lh-sm">At least 15 dead as <br> suspected tornadoes tear across southern states</p>
+          <p class="text-muted m-0"><small>14 hours ago</small></p>
+        </div>
+              <img src="https://cms.accuweather.com/wp-content/uploads/2024/05/AP24147576400663.jpeg?w=64&h=64&crop=1" class="img-fluid rounded-start" alt="...">
+            </div>
+            <!-- crd-1 end -->
+
+            <div class="crd p-3 d-flex align-items-start justify-content-between gap-3 bg-light border-bottom">
+              <div class="crd-body">
+                <p class="text-muted m-0"><small>SEVERE WEATHER</small></p>
+                <p class="m-0 lh-sm">Millions at risk for severe weather in the Northeast on Memorial Day</p>
+                <p class="text-muted m-0"><small>2 hours ago</small></p>
+              </div>
+                    <img src="https://cms.accuweather.com/wp-content/uploads/2024/05/severetstorms2_montomoneve_northeast_052624.jpeg?w=64&h=64&crop=1" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <!-- crd-2 end -->
+
+                  <div class="crd p-3 d-flex align-items-start justify-content-between gap-3 bg-light border-bottom">
+                    <div class="crd-body">
+                      <p class="text-muted m-0"><small>HURRICANE</small></p>
+                      <p class="m-0 lh-sm">2024 Atlantic hurricanes are primed for 'rapid intensification'</p>
+                      <p class="text-muted m-0"><small>3 days ago</small></p>
+                    </div>
+                          <img src="https://cms.accuweather.com/wp-content/uploads/2024/05/AP22271107806237.jpg?w=64&h=64&crop=1" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <!-- crd-3 end -->
+
+                        <div class="crd p-3 d-flex align-items-start justify-content-between gap-3 bg-light border-bottom">
+                          <div class="crd-body">
+                            <p class="text-muted m-0"><small>WEATHER FORECASTS</small></p>
+                            <p class="m-0 lh-sm">Where Memorial Day plans will be upended by rain, storms</p>
+                            <p class="text-muted m-0"><small>2 hours ago</small></p>
+                          </div>
+                                <img src="https://cms.accuweather.com/wp-content/uploads/2024/05/page-3_70cbe8.jpg?w=64&h=64&crop=1" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <!-- crd-4 end -->
+
+                              <div class="crd p-3 d-flex align-items-start justify-content-between gap-3 bg-light border-bottom">
+                                <div class="crd-body">
+                                  <p class="text-muted m-0"><small>SEVERE WEATHER</small></p>
+                                  <p class="m-0 lh-sm">Severe storms to rumble across the Central states through early week</p>
+                                  <p class="text-muted m-0"><small>2 hours ago</small></p>
+                                </div>
+                                      <img src="https://cms.accuweather.com/wp-content/uploads/2024/05/page_9df889.jpg?w=64&h=64&crop=1" alt="...">
+                                    </div>
+                                    <!-- crd-5 end -->
+
+                                    <div class="ms bg-light px-3 py-2 fw-bold border-bottom">
+                                      <h5>More Stories</h5>
+                                    </div>
+
+                                    <div class="ts bg-light border-bottom p-3">
+                                      <h4 class="m-0">Viral Weather</h4>
+                                    </div>
+                                    <!-- ts  end -->
+
+
+
+        <div class="ts mt-3 bg-light border-bottom p-3">
+          <h4>Featured Stories</h4>
+        </div>
+        <!-- ts  end -->
+       
+        <div class="crd p-3 d-flex align-items-start justify-content-between gap-3 bg-light border-bottom">
+        <div class="crd-body">
+          <p class="text-muted m-0"><small>TRAVEL</small></p>
+          <p class="m-0 lh-sm">These are the hurdles for air travelers this busy summer</p>
+          <p class="text-muted m-0"><small>2 days ago</small></p>
+        </div>
+              <img src="https://cms.accuweather.com/wp-content/uploads/2024/05/cnn-L19jb21wb25lbnRzL2ltYWdlL2luc3RhbmNlcy9jbHdqb3JpaWYwMDFoM2I2andrMXJ0c3Rk-L19jb21wb25lbnRzL2FydGljbGUvaW5zdGFuY2VzL2Nsd2pvM3FuMDAwMG5jMnAxNWNpczhoYXI.jpg?w=64&h=64&crop=1" class="img-fluid rounded-start" alt="...">
+            </div>
+            <!-- crd-1 end -->
+
+            <div class="crd p-3 d-flex align-items-start justify-content-between gap-3 bg-light border-bottom">
+              <div class="crd-body">
+                <p class="text-muted m-0"><small>TRAVEL</small></p>
+                <p class="m-0 lh-sm">The top 10 US beaches for 2024, according to ‘Dr. Beach’</p>
+                <p class="text-muted m-0"><small>2 days ago</small></p>
+              </div>
+                    <img src="https://cms.accuweather.com/wp-content/uploads/2024/05/cnn-L19jb21wb25lbnRzL2ltYWdlL2luc3RhbmNlcy9jbHdpOG5ub3owMDBpOWpxbDg5bHQ2c3N2-L19jb21wb25lbnRzL2FydGljbGUvaW5zdGFuY2VzL2Nsd2k4bm5vejAwMG45anFsZXd2bWZwcGw.jpg?w=64&h=64&crop=1" alt="...">
+                  </div>
+                  <!-- crd-2 end -->
+
+                  <div class="crd p-3 d-flex align-items-start justify-content-between gap-3 bg-light border-bottom">
+                    <div class="crd-body">
+                      <p class="text-muted m-0"><small>ASTRONOMY</small></p>
+                      <p class="m-0 lh-sm">NASA announces new target date for crewed Boeing Starliner mission</p>
+                      <p class="text-muted m-0"><small>2 days ago</small></p>
+                    </div>
+                          <img src="https://cms.accuweather.com/wp-content/uploads/2024/05/cnn-L19jb21wb25lbnRzL2ltYWdlL2luc3RhbmNlcy9jbHdodmZ1cWUwMDAyMmU2YWZjN3k5N2s0-L19jb21wb25lbnRzL2FydGljbGUvaW5zdGFuY2VzL2Nsd2h1NXN6MDAwMHd0c3FmNmJiNWVheGc-1.jpg?w=64&h=64&crop=1" alt="...">
+                        </div>
+                        <!-- crd-3 end -->
+
+                        <div class="crd p-3 d-flex align-items-start justify-content-between gap-3 bg-light border-bottom">
+                          <div class="crd-body">
+                            <p class="text-muted m-0"><small>WEATHER NEWS</small></p>
+                            <p class="m-0 lh-sm">Mountaineer dead, Nepali sherpa missing after trying to summit Everest</p>
+                            <p class="text-muted m-0"><small>2 days ago</small></p>
+                          </div>
+                                <img src="https://cms.accuweather.com/wp-content/uploads/2024/05/cnn-L19jb21wb25lbnRzL2ltYWdlL2luc3RhbmNlcy9jbHdqcnpvMHMwMDAwM2I2am13bnA0eHU1-L19jb21wb25lbnRzL2FydGljbGUvaW5zdGFuY2VzL2Nsd2pwdG1ueTAwMG5lMXFtMmEzMWh2Zmw.jpg?w=64&h=64&crop=1" alt="...">
+                              </div>
+                              <!-- crd-4 end -->
+
+                              <div class="crd p-3 d-flex align-items-start justify-content-between gap-3 bg-light border-bottom">
+                                <div class="crd-body">
+                                  <p class="text-muted m-0"><small>WEATHER NEWS</small></p>
+                                  <p class="m-0 lh-sm">USS Harder: Wreck of famed US Navy World War II sub found off the Phil...
+
+                                  </p>
+                                  <p class="text-muted m-0"><small>2 days ago</small></p>
+                                </div>
+                                      <img src="https://cms.accuweather.com/wp-content/uploads/2024/05/cnn-L19jb21wb25lbnRzL2ltYWdlL2luc3RhbmNlcy9jbHdrNDZ6dWowMDBuM2I2anNtZGFmMnB3-L19jb21wb25lbnRzL2FydGljbGUvaW5zdGFuY2VzL2Nsd2s0MXF3eDAwMWxwdXFnNGc4ZWJ1NnE-1.jpg?w=64&h=64&crop=1" alt="...">
+                                    </div>
+                                    <!-- crd-5 end -->
+
+      </div>
+      <!-- c-right end -->      
+    </div>
+    <!-- c-parent end -->
+
+    <div class="opcc d-flex align-items-center justify-content-center flex-column w-100 p-4 mb-4 bg-light">
+
+        <div class="is w-100 bg-light mb-4 d-flex align-items-center justify-content-between">
+          <h4 class="m-0 fw-bold">Around the Web</h4>
+          <span>
+          <small class="text-muted">Powered by</small>
+          <img src="https://img.revcontent.com/?url=https://cdn.revcontent.com/assets/img/full_color_name.png&static=true" alt="">
+        </span>
+      </div>
+      <!-- is end -->
+    
+        <div class="card-group mb-1 w-100 d-flex gap-3 flex-wrap">
+          <div class="card">
+            <img src="https://images.revcontent.com/revcontent/image/fetch/f_jpg,q_85,h_150,w_225,c_fill,g_faces:auto/pg_1/https://media.revcontent.com/content/images/15263283421593005855.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <small class="text-muted">SECRETS REVEALED</small>
+              <p class="card-text">This Video Will Soon Be Banned. Watch Before It's Deleted</p>
+             
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://images.revcontent.com/revcontent/image/fetch/f_jpg,q_85,h_150,w_225,c_fill,g_faces:auto/pg_1/https://media.revcontent.com/content/images/62dfabb681a201-92796017.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <small class="text-muted">BOLLYWOOD</small>
+              <p class="card-text">This Video Will Soon Be Banned. Watch Before It's Deleted</p>
+             
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://images.revcontent.com/revcontent/image/fetch/f_jpg,q_85,h_150,w_225,c_fill,g_faces:auto/pg_1/https://media.revcontent.com/content/images/61488425e43805-33775925.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Did Your Mom Ever Make the Paper? Search Newspapers.com</p>
+              
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://images.revcontent.com/revcontent/image/fetch/f_jpg,q_85,h_150,w_225,c_fill,g_faces:auto/pg_1/https://media.revcontent.com/content/images/6148824b8ed3c7-58590914.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">The Close Relationship Between Stress and Sleep</p>         
+            </div>
+          </div>
+        </div>
+        <!-- card-group end -->
+    
+        <div class="card-group w-100 d-flex gap-3 flex-wrap">
+          <div class="card">
+            <img src="https://images.revcontent.com/revcontent/image/fetch/f_jpg,q_85,h_150,w_225,c_fill,g_faces:auto/pg_1/https://media.revcontent.com/content/images/6222307556eae2-37868302.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Standing with the People of Ukraine</p>
+             
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://images.revcontent.com/revcontent/image/fetch/f_jpg,q_85,h_150,w_225,c_fill,g_faces:auto/pg_1/https://media.revcontent.com/content/images/614885d56a6fd1-07374732.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Five Destinations to Explore During Hispanic Heritage Month</p>
+             
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://images.revcontent.com/revcontent/image/fetch/f_jpg,q_85,h_150,w_225,c_fill,g_faces:auto/pg_1/https://media.revcontent.com/content/images/61488383a45fe3-43115893.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">How Long Should I Keep My Car?</p>
+              
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://images.revcontent.com/revcontent/image/fetch/f_jpg,q_85,h_150,w_225,c_fill,g_faces:auto/pg_1/https://media.revcontent.com/content/images/6148819f62b599-77314740.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Five Reasons Your Car Insurance Rate Changes</p>         
+            </div>
+          </div>
+        </div>
+        <!-- card-group-2 end -->
+      </div>
+      <!-- opcc end -->
+    </div>
+    
+    <div class="waikk">
+        <div class="container d-flex gap-3">
+          <a href="#">World</a>
+          <i class="bi bi-chevron-right"></i>
+          <a href="#">Asia</a>
+          <i class="bi bi-chevron-right"></i>
+          <a href="#">India</a>
+          <i class="bi bi-chevron-right"></i>
+          <a href="#">West Bengal</a>
+          <i class="bi bi-chevron-right"></i>
+          <a href="#">Kolkata</a>
+        </div>
+      </div>
+      <!-- waik end -->
+
+      <footer class="footer border-bottom bg-light w-100">
+        <ul  class="sqoa-ul">
+          <li class="ul-li">
+            <ul class="ul">
+              <h6>COMPANY</h6>
+              <li>Proven Superior Accuracy</li>
+              <li>About AccuWeather</li>
+              <li>Digital Advertising</li>
+              <li>Careers</li>
+              <li>Press</li>
+              <li>Contact Us</li>
+              <div class="aft d-flex align-items-start justify-content-start gap-2 mt-3">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGRhdGEtc3JjPSIvaW1hZ2VzL3NvY2lhbGljb25zL2Rvd25sb2Fkcy5zdmciIGNsYXNzPSJzb2NpYWwtaWNvbiIgYWx0PSJTb2NpYWwgSWNvbiIgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiB2aWV3Qm94PSIwIDAgMzYgMzYiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+PHBhdGggZD0iTTE4IDBDOC4wNTMgMCAwIDguMDUzIDAgMThzOC4wNTMgMTggMTggMTggMTgtOC4wNTMgMTgtMThTMjcuOTQ3IDAgMTggMFoiIGZpbGw9IiNFRTU3MjMiLz48cGF0aCBkPSJNMTIuODggMTIuOTQ3YTcuMjQzIDcuMjQzIDAgMCAxIDEwLjI0IDBjMi44MTMgMi44MjYgMi44MjcgNy40MTMgMCAxMC4yMjYtMi44MjcgMi44MjctNy40MTMgMi44MjctMTAuMjI3IDAtMi44MjYtMi44MTMtMi44MjYtNy40LS4wMTMtMTAuMjI2Wk0xOCA5LjkwN2MtNC40NjcgMC04LjEwNyAzLjY0LTguMTA3IDguMTA2IDAgNC40NjcgMy42NCA4LjEwNyA4LjEwNyA4LjEwNyA0LjQ2NyAwIDguMTA3LTMuNjQgOC4xMDctOC4xMDcgMC00LjQ4LTMuNjQtOC4xMDYtOC4xMDctOC4xMDZabTEwLjEyIDIuMjEzLTMuNTItLjc2LS43NzMtMy41MDdMMjAuNCA4Ljk0N2wtMi40MjctMi42NTRMMTUuNTYgOC45NmwtMy40MjctMS4wOC0uNzYgMy41Mi0zLjUwNi43NzNMOC45NzMgMTUuNiA2LjMyIDE4LjAyN2wyLjY2NyAyLjQxMy0xLjA4IDMuNDI3IDMuNTIuNzYuNzczIDMuNTA2IDMuNDI3LTEuMDkzIDIuNDI2IDIuNjUzIDIuNDE0LTIuNjY2IDMuNDI2IDEuMDguNzYtMy41MiAzLjUwNy0uNzg3LTEuMTA3LTMuNDI3IDIuNjU0LTIuNDI2LTIuNjY3LTIuNDE0IDEuMDgtMy40MTNaIiBmaWxsPSIjRkZGIi8+PC9nPjwvc3ZnPg==" alt="">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGRhdGEtc3JjPSIvaW1hZ2VzL3NvY2lhbGljb25zL2ZhY2Vib29rLnN2ZyIgY2xhc3M9InNvY2lhbC1pY29uIiBhbHQ9IlNvY2lhbCBJY29uIiB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzNiAzNiI+PGcgZmlsbC1ydWxlPSJub256ZXJvIiBmaWxsPSJub25lIj48cGF0aCBkPSJNMjAuOCA1LjA2OWMtOS45NDYgMC0xMS41MTQgNC4zLTExLjUxNCAxNC4yNDcgMCA4LjA5Mi0xLjk5NyA1LjA4MiA1LjM0NiA3LjM1MkMxNi4zMTUgMjcuMTg4IDE2LjE0NSAzNiAxOCAzNmMxLjcyIDAgMy4zODMtLjI0IDQuOTU3LS42OSAyLjQwOC0uNjg4IDQuNDY2LTQuMTM1IDYuMTczLTEwLjM0MiAxLjY0NC0yLjE3OSAyLjQ2Ni00LjY5NiAyLjQ2Ni03LjU1IDAtOS45NDctLjg1LTEyLjM1LTEwLjc5Ni0xMi4zNVoiIGZpbGw9IiNGRkYiLz48cGF0aCBkPSJNMTggMEM4LjA1MyAwIDAgOC4wNTMgMCAxOGMwIDkuODkzIDcuOTg3IDE3LjkzMyAxNy44NjcgMThWMjMuNjUzaC00LjE2VjE4Ljg0aDQuMTZ2LTMuNTQ3YzAtNC4xMiAyLjUyLTYuMzYgNi4xODYtNi4zNiAxLjc2IDAgMy4yNjcuMTM0IDMuNzA3LjE4N3Y0LjMwN2gtMi41NDdjLTIgMC0yLjM4Ni45NDYtMi4zODYgMi4zNDZ2My4wNjdIMjcuNmwtLjYyNyA0LjgxM2gtNC4xNDZ2MTEuNjk0QzMwLjQyNyAzMy4yMjcgMzYgMjYuMjY3IDM2IDE4YzAtOS45NDctOC4wNTMtMTgtMTgtMThaIiBmaWxsPSIjNDE2N0IyIi8+PC9nPjwvc3ZnPg==" alt="">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGRhdGEtc3JjPSIvaW1hZ2VzL3NvY2lhbGljb25zL3R3aXR0ZXIuc3ZnIiBjbGFzcz0ic29jaWFsLWljb24iIGFsdD0iU29jaWFsIEljb24iIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDM2IDM2Ij48ZyBmaWxsLXJ1bGU9Im5vbnplcm8iIGZpbGw9Im5vbmUiPjxwYXRoIGQ9Ik0xOCAwQzguMDUzIDAgMCA4LjA1MyAwIDE4czguMDUzIDE4IDE4IDE4IDE4LTguMDUzIDE4LTE4UzI3Ljk0NyAwIDE4IDBaIiBmaWxsPSIjMURBMUYzIi8+PHBhdGggZD0iTTI2LjkwNCAxNC4zMTZjLjAxMi4xODMuMDEyLjM3Ni4wMTIuNTcgMCA1Ljc3NC00LjI5NCAxMi40NDgtMTIuMTQgMTIuNDQ4YTExLjk2IDExLjk2IDAgMCAxLTYuNTM4LTEuOTZjLjMzLjA0Ni42NzIuMDU4IDEuMDE0LjA1OGE4LjQyNCA4LjQyNCAwIDAgMCA1LjI5Ni0xLjg2OGMtMS44NjgtLjAzNC0zLjQ0LTEuMjk4LTMuOTg3LTMuMDQuMjYyLjA1Ni41MjQuMDc5Ljc5OC4wNzkuMzg3IDAgLjc2My0uMDU3IDEuMTI3LS4xNi0xLjk0Ny0uMzk4LTMuNDI4LTIuMTYzLTMuNDI4LTQuMjkzdi0uMDU3Yy41ODEuMzMgMS4yMy41MjQgMS45MzYuNTQ3YTQuNDE3IDQuNDE3IDAgMCAxLTEuOTAyLTMuNjQ1YzAtLjc5Ny4yMDUtMS41NDkuNTgxLTIuMTk4IDIuMTA3IDIuNjU0IDUuMjUgNC4zODUgOC43OTIgNC41NjdhNC43MTcgNC43MTcgMCAwIDEtLjExNC0uOTljMC0yLjQxNSAxLjkxNC00LjM3NCA0LjI2LTQuMzc0IDEuMjMgMCAyLjMzNS41MzUgMy4xMDkgMS4zNzhhOC4yNiA4LjI2IDAgMCAwIDIuNzEtMS4wNiA0LjMgNC4zIDAgMCAxLTEuODc5IDIuNDE1QTguNCA4LjQgMCAwIDAgMjkgMTIuMDVjLS41MzUuODc3LTEuMjY0IDEuNjQtMi4wOTYgMi4yNjZaIiBmaWxsPSIjRkZGIi8+PC9nPjwvc3ZnPg==" alt="">
+              </div>
+              <!-- aft end -->
+              </ul>
+          </li>
+          <!-- li-1 end -->
+          <li class="ul-li">
+            <ul class="ul">
+              <h6>PRODUCTS & SERVICES</h6>
+              <li>For Business</li>
+              <li>For Partners</li>
+              <li>For Advertising</li>
+              <li>AccuWeather APIs</li>
+              <li>AccuWeather Connect</li>
+              <li>RealFeel® and RealFeel Shade™</li>
+              </ul>
+          </li>
+          <!-- li-2 end -->
+          <li class="ul-li">
+            <ul class="ul">
+              <h6>APPS & DOWNLOADS</h6>
+              <li>iPhone App</li>
+              <li>Android App</li>
+              <li>See all Apps & Downloads</li>
+              <h6 style="margin-top: 16px;">SUBSCRIPTION SERVICES</h6>
+              <li>AccuWeather Premium</li>
+              <li>AccuWeather Professional</li>
+              </ul>
+          </li>
+          <!-- li-3 end -->
+          <li class="ul-li">
+            <ul class="ul">
+              <h6>MORE</h6>
+              <li>AccuWeather Ready</li>
+              <li>Business</li>
+              <li>Health</li>
+              <li>Hurricane</li>
+              <li>Leisure and Recreation</li>
+              <li>Severe Weather</li>
+              <li>Space and Astronomy</li>
+              <li>Sports</li>
+              <li>Travel</li>
+              <li>Weather News</li>
+              </ul>
+          </li>
+          <!-- li-4 end -->
+        </ul>
+        <!-- sqoa-ul end -->
+      </footer>
+    
+      <footer class="mini-footer py-3 d-flex align-items-center justify-content-center flex-column bg-light">
+        <p>© 2024 AccuWeather, Inc. "AccuWeather" and sun design are registered trademarks of AccuWeather, Inc. All Rights Reserved.</p>
+        <ul class="d-flex align-items-center justify-content-center gap-1">
+          <li><a href="#">Terms of Use</a></li>
+          <li>|</li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li>|</li>
+          <li><a href="#">Cookie Policy</a></li>
+        </ul>
+      </footer>
+      <!-- mini-footer end -->
+
+</div>
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
